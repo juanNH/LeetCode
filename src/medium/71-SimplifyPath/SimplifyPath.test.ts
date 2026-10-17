@@ -40,7 +40,7 @@ Return the simplified canonical path.
     test(`
     Test case area E.
     `, () => {
-        expect(simplifyPath('/.../a/../b/c/../d/./')).toStrictEqual('//.../b/d');
+        expect(simplifyPath('/.../a/../b/c/../d/./')).toStrictEqual('/.../b/d');
     });
     test(`
     Test case area f.
